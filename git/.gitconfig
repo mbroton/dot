@@ -1,6 +1,6 @@
 [user]
-	name = Michał Brotoń
-	email = michal.broton.ns@gmail.com
+	name = {name}
+	email = {email}
 [core]
 	excludesfile = ~/.gitignore_global
 [pull]
