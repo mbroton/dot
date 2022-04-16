@@ -14,10 +14,3 @@ git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$
 
 # copy config
 cp "$PWD/.zshrc" "$HOME/.zshrc"
-
-# link config
-#ln -sf "$PWD/.zshrc" "$HOME/.zshrc"
-
-# add zsh as a login shell
-#command -v zsh | sudo tee -a /etc/shells
-
