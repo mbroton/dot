@@ -20,7 +20,7 @@ source $ZSH/oh-my-zsh.sh
 # User configuration
 
 # Aliases
-alias ls='ls -A'
+alias ls='ls --color=auto -A'
 
 # Todo test
 ve() {
