@@ -12,5 +12,5 @@ ln -sf "$PWD/.vimrc" "$HOME/.vimrc"
 # Plugin manager
 curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
     https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
-mkdir -p "$HOME/.vim/" "$HOME/.vim/autoload"
-cp "$PWD/autoload/plug.vim" "$HOME/.vim/autoload/plug.vim"
+#mkdir -p "$HOME/.vim/" "$HOME/.vim/autoload"
+#cp "$PWD/autoload/plug.vim" "$HOME/.vim/autoload/plug.vim"
