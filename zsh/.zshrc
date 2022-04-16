@@ -39,6 +39,7 @@ vc() {
         return
     fi
     virtualenv $1
+}
 # deactivate:
 alias vd='deactivate'
 
