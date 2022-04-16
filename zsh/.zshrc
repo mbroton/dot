@@ -12,6 +12,7 @@ ZSH_THEME="powerlevel10k/powerlevel10k"
 
 # Autostart tmux (works only with tmux plugin)
 ZSH_TMUX_AUTOSTART="true"
+ZSH_TMUX_AUTOCONNECT="false"
 
 plugins=(git colored-man-pages command-not-found git-extras node tmux)
 source $ZSH/oh-my-zsh.sh
@@ -22,10 +23,10 @@ source $ZSH/oh-my-zsh.sh
 alias ls='ls -A'
 
 # Todo test
-#ve() {
-    #source $1/bin/activate
-#}
-alias ve='source venv/bin/activate'
+ve() {
+    source $1/bin/activate
+}
+#alias ve='source venv/bin/activate'
 alias vc='virtualenv'
 alias vd='deactivate'
 
