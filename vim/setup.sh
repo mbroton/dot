@@ -1,6 +1,6 @@
 #!/bin/bash
 
-sudo apt install vim
+sudo apt install vim curl
 
 if [ -z "$(which vim)" -o -z "$(which vimtutor)" ]; then
   echo "Warning, doesn't look like you have full Vim version."
