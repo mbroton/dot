@@ -1,0 +1,13 @@
+[user]
+	name = Michał Brotoń
+	email = michal.broton.ns@gmail.com
+[core]
+	excludesfile = ~/.gitignore_global
+[pull]
+	ff = only
+[init]
+    defaultBranch = main
+[alias]
+    st = status
+    ci = commit
+    co = checkout
