@@ -5,7 +5,7 @@ setup.sh script will:
 - Copy .vimrc to $HOME
 - Install vim plugin manager "Plug"
 
-Then, you need to open .vimrc:
+Then, you need to open .vimrc (ignore errors):
 ```
 vim ~/.vimrc
 ```

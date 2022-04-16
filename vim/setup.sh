@@ -9,6 +9,9 @@ fi
 # Config file
 ln -sf "$PWD/.vimrc" "$HOME/.vimrc"
 
+# Create directory for swap files
+mkdir "$HOME/.vim/tmp"
+
 # Plugin manager
 curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
     https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
