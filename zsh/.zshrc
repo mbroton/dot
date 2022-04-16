@@ -17,18 +17,31 @@ ZSH_TMUX_AUTOCONNECT="false"
 plugins=(git colored-man-pages command-not-found git-extras node tmux)
 source $ZSH/oh-my-zsh.sh
 
-# User configuration
 
 # Aliases
 alias ls='ls --color=auto -A'
 
-# Todo test
+# Virtualenv aliases
+# enter:
 ve() {
+    if [ $# -eq 0 ]
+    then
+        echo "Missing argument. Usage: ve <virtualenv name>"
+        return
+    fi
     source $1/bin/activate
 }
-#alias ve='source venv/bin/activate'
-alias vc='virtualenv'
+# create:
+vc() {
+    if [ $# -eq 0 ]
+    then
+        echo "Missing argument. Usage: vc <virtualenv name>"
+        return
+    fi
+    virtualenv $1
+# deactivate:
 alias vd='deactivate'
+
 
 # Binds
 bindkey '^[[H' beginning-of-line
