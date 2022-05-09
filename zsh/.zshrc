@@ -10,13 +10,13 @@ ZSH_THEME="powerlevel10k/powerlevel10k"
 # Uncomment the following line if pasting URLs and other text is messed up.
 # DISABLE_MAGIC_FUNCTIONS="true"
 
-# Autostart tmux (works only with tmux plugin)
-ZSH_TMUX_AUTOSTART="true"
-ZSH_TMUX_AUTOCONNECT="false"
-
 plugins=(git colored-man-pages command-not-found git-extras node tmux)
 source $ZSH/oh-my-zsh.sh
 
+# Autostart tmux (works only with tmux plugin)
+ZSH_TMUX_AUTOSTART="true"
+ZSH_TMUX_AUTOCONNECT="false"
+ZSH_TMUX_AUTOQUIT="true"
 
 # Aliases
 alias ls='ls --color=auto -A'
