@@ -1,0 +1,3 @@
+bat (via brew)
+eza (via brew)
+  alias ls="eza --color=auto -a --git --icons=always --no-time --no-user --no-permissions"
