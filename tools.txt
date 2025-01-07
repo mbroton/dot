@@ -1,3 +1,10 @@
+fzf
+ripgrep
 bat (via brew)
 eza (via brew)
   alias ls="eza --color=auto -a --git --icons=always --no-time --no-user --no-permissions"
+fd:
+fd() {
+  preview="git diff $@ --color=always -- {-1}"
+  git diff $@ --name-only | fzf -m --ansi --preview $preview
+}
